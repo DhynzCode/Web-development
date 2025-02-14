@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMap Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>DevMap Admin</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#user-management">User Management</a></li>
+            <li><a href="#contribution-approval">Contribution Approval</a></li>
+            <li><a href="#system-updates">System Updates</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <section id="dashboard">
+            <h1>Dashboard</h1>
+            <p>Overview of system status and key metrics.</p>
+        </section>
+        
+        <section id="user-management">
+            <h1>User Management</h1>
+            <p>View and manage all registered users.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list">
+                    <!-- User data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contribution-approval">
+            <h1>Contribution Approval</h1>
+            <p>Approve or reject contributions from developers.</p>
+            <div id="contribution-list">
+                <!-- Contributions will be dynamically listed here -->
+            </div>
+        </section>
+
+        <section id="system-updates">
+            <h1>System Updates</h1>
+            <p>Check for and apply system updates.</p>
+            <button onclick="applyUpdate()">Apply Update</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
